@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador QR</title>
+</head>
+<body>
+    <header>
+        <h1>Generador de Código QR</h1> 
+    </header>
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required maxlength="100">
+        <br>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" required>
+        <br>
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" placeholder="Ingresa tu número de teléfono" required pattern="[0-9]{10}">
+        <br>
+        <label for="institucion">Institución:</label>
+        <input type="text" id="institucion" list="Listinstitucion" placeholder="Selecciona tu institucion" required>
+        <datalist id="Listinstitucion">
+            <option value="Instituto Politécnico Nacional"></option>
+            <option value="Universidad Nacional Autónoma de México"></option>
+            <option value="Universidad Autónoma Metropolitana"></option>
+            <option value="Universidad de Guadalajara"></option>
+            <option value="Universidad Autónoma del Estado de México"></option>
+        </datalist>
+        <br>
+        <button id="generar">Generar Código QR</button>
+
+        <div style="text-align: center;" id="qr"> 
+            <!Aquí se mostrará el código QR generado>
+
+        </div>
+    </div>
+
+</body>
+</html>
