@@ -1,0 +1,16 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora Web - HTML, CSS, JavaScript y Express",
+  "main": "calculadora_server/app12.js",
+  "scripts": {
+    "start": "cd calculadora_server && npm install && npm start",
+    "dev": "cd calculadora_server && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["calculadora", "express", "web"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+}
